@@ -163,11 +163,36 @@ Comentários:
 
 Os testes dos módulos da sprit 1 invadiram a maior parte do sprint 2. Será necessário um replanejamento, considerando que não será possível cumprir a meta da Sprint.
 
-Status: em andamento
+Status: Meta cumprida, porém com atraso (finalizada dia 10/09)
 
 Dificuldades:
 
 * as atividades do sprint anterior acabaram invadindo o time deste sprint.
+
+
+*SPRINT 3 - 10/09:*
+
+Objetivo inicial:
+
+* ter o index.js roteando as páginas: formulario, envio das informações do formulario por email, sobre e um log de sessao de usuario;
+
+* ter a estrutura da faca-parte.handlebars (onde vai ter o formulario)
+
+* ter a estrutura da sobre.handlebars
+
+* ter a estrutura da pagina de controle de sessao - admin.handlebars
+
+* envio do formulario do faça parte por email
+
+Comentários:
+
+Ainda não fizemos nenhum exemplo de envio de e-mail por conta própria.
+
+Status: A iniciar
+
+Dificuldades:
+
+* .
 
 
 

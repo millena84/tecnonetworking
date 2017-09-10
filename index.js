@@ -29,7 +29,8 @@ var fileSystem = require('fs');
 const util = require('util');
 
 // objetos JSON:
-// em definição
+// contatosCadastrados:
+const listaContatosJson = require('./dados/contatosCadastrados.json');
 
 // Ligando o servidor para ele receber as requisições:
 var server = app.listen(3000, () => {
@@ -52,10 +53,28 @@ function logControle(metodo, rota, status, acao) {
 
 app.get('/', (request, response) => {
   // testes para primeira exibicao
-  response.send(`<h1>Olá!</h1`)
-
+  //response.send(`<h1>Olá!</h1`)
+  // resposta à requisição: reinderizar index.handlebars
+  response.render('index');
+  // log do que foi feito na requisição
   var metodo = request.method;
   var rota = "/index";
+  var status = response.status;
+  var acao = "render";
+  logControle(metodo, rota, status, acao);
+});
+
+// Rota contatos:
+// Métodos: GET (exibição de dados na tela)
+// Envio de dados: não há (na v2)
+// Leitura de arquivo: contatosCadastrados.json
+
+app.get('/contatos', (request, response) => {
+  // resposta à requisição: reinderizar contatos.handlebars
+  response.render('contatos', {contatos: true, listaContatos: listaContatosJson});
+  // log do que foi feito na requisição
+  var metodo = request.method;
+  var rota = "/contatos";
   var status = response.status;
   var acao = "render";
   logControle(metodo, rota, status, acao);

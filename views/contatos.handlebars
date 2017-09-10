@@ -1,0 +1,44 @@
+<!-- Conteúdo da Pagina-->
+<div class="container">
+  <div class="bg-faded p-4 my-4">
+      <hr class="divider">
+      <h2 class="text-center text-lg text-uppercase my-0">Nossos
+          <strong>Contatos</strong>
+      </h2>
+      <hr class="divider">
+      <p>Uma das grandes dificuldades de quem está começando na área de tecnologia é ter um networking de contatos que estejam próximos e possam auxiliar no aprendizado. Encontrei aqui pessoas próximas a você dispostas a te ajudar!</p>
+      <br>
+      <div class="row">
+          <!-- Inclusão de um for each, para mostrar os contatos de forma dinâmica. -->
+          {{#each listaContatos}}
+          <div class="col-md-6 mb-6 mb-md-0">
+              <div class="card h-100">
+                  <img class="card-img-top" src="img/contatos/{{foto}}" alt="">
+                  <div class="card-body text-center">
+                      <h4 class="card-title m-0 text-left">Nome: {{nome}}
+                        <br>
+                        <small class="text-muted">Profissão: {{profissao}}</small>
+                        <br>
+                        <small class="text-muted">Cidade: {{cidade}}</small>
+                        <br>
+                        <small class="text-muted">Estado: {{estado}}</small>
+                        <br>
+                        <small class="text-muted">País: {{pais}}</small>
+                        <br>
+                        <small class="text-muted">Skill: {{skill}}</small>
+                        <br>
+                        <small class="text-muted">Nível: {{nivel}}</small>
+                        <br>
+                        <small class="text-muted">Descrição: {{descricao}}</small>
+                        <br>
+                        <small class="text-muted">Principal conhecimento: {{conhecimento}}</small>
+                        <br>
+                        <small class="text-muted">Disponível para: {{disponivel}}</small>
+                      </h4>
+                  </div>
+              </div>
+          </div>
+          {{/each}}
+      </div>
+</div>
+<!-- /Conteúdo da Pagina-->

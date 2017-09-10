@@ -1,0 +1,39 @@
+[
+  {
+    "foto": "intro-pic.jpg",
+    "nome": "Alberto",
+    "profissao": "CTO da Verios",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "pais": "Brasil",
+    "skill": "backend",
+    "nivel": "profissional",
+    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
+    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
+    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
+  },
+  {
+    "foto": "intro-pic.jpg",
+    "nome": "Alberto",
+    "profissao": "CTO da Verios",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "pais": "Brasil",
+    "skill": "backend",
+    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
+    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
+    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
+  },
+  {
+    "foto": "intro-pic.jpg",
+    "nome": "Alberto",
+    "profissao": "CTO da Verios",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "pais": "Brasil",
+    "skill": "backend",
+    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
+    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
+    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
+  }
+]
