@@ -31,6 +31,8 @@ const util = require('util');
 // objetos JSON:
 // contatosCadastrados:
 const listaContatosJson = require('./dados/contatosCadastrados.json');
+// sobre: quem faz parte do projeto:
+const listaSobreJson = require('./dados/quemSomos.json');
 
 // Ligando o servidor para ele receber as requisições:
 var server = app.listen(3000, () => {
@@ -72,6 +74,22 @@ app.get('/', (request, response) => {
 app.get('/contatos', (request, response) => {
   // resposta à requisição: reinderizar contatos.handlebars
   response.render('contatos', {contatos: true, listaContatos: listaContatosJson});
+  // log do que foi feito na requisição
+  var metodo = request.method;
+  var rota = "/contatos";
+  var status = response.status;
+  var acao = "render";
+  logControle(metodo, rota, status, acao);
+});
+
+// Rota sobre:
+// Métodos: GET (exibição de dados na tela)
+// Envio de dados: não há (na v2)
+// Leitura de arquivo: quemSomos.json
+
+app.get('/quemSomos', (request, response) => {
+  // resposta à requisição: reinderizar contatos.handlebars
+  response.render('quemSomos', {contatos: true, quemSomos: listaSobreJson});
   // log do que foi feito na requisição
   var metodo = request.method;
   var rota = "/contatos";
