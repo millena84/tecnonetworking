@@ -1,0 +1,27 @@
+{
+  "name": "5-tecnonetworking",
+  "version": "1.0.0",
+  "description": "Projeto rede colaborativa de tencnologia - Curso mastertech backend - agosto/2017",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millena84/tecnonetworking.git"
+  },
+  "author": "millena84",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/millena84/tecnonetworking/issues"
+  },
+  "homepage": "https://github.com/millena84/tecnonetworking#readme"
+}
