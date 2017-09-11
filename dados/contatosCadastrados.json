@@ -1,39 +1,43 @@
 [
-  {
-    "foto": "intro-pic.jpg",
-    "nome": "Alberto",
-    "profissao": "CTO da Verios",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "pais": "Brasil",
-    "skill": "backend",
-    "nivel": "profissional",
-    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
-    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
-    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
-  },
-  {
-    "foto": "intro-pic.jpg",
-    "nome": "Alberto",
-    "profissao": "CTO da Verios",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "pais": "Brasil",
-    "skill": "backend",
-    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
-    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
-    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
-  },
-  {
-    "foto": "intro-pic.jpg",
-    "nome": "Alberto",
-    "profissao": "CTO da Verios",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "pais": "Brasil",
-    "skill": "backend",
-    "descricao": "Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
-    "conhecimento": "Java, Javascript, Nodejs, MongoDB",
-    "disponivel": "Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
-  }
+    {
+        "foto":"contato1.jpg",
+        "nome":"Alberto",
+        "email":"alberto@mastertech.tech",
+        "profissao":"CTO da Verios",
+        "cidade":"São Paulo",
+        "estado":"SP",
+        "pais":"Brasil",
+        "skill":"backend",
+        "nivel":"Mestre Jedi",
+        "descricao":"Especialista em java, javascript e nodejs. Instrutor da Mastertech desde 2015",
+        "conhecimento":"Java, Javascript, Nodejs, MongoDB",
+        "disponivel":"Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
+    },
+    {
+        "foto":"contato2.jpg",
+        "nome":"Bruno",
+        "email":"bruno@mastertech.tech",
+        "profissao":"Especialista Full-Stack do Walmart",
+        "cidade":"São Paulo",
+        "estado":"SP",
+        "pais":"Brasil",
+        "skill":"Full-stack",
+        "nivel":"Mestre Jedi",
+        "descricao":"Especialista em php e com conhecimentos sólidos em Python, javascript e nodejs. Instrutor da Mastertech desde 2015",
+        "conhecimento":"Php, Python, nodejs e MySQL",
+        "disponivel":"Cursos particulares e corporativos (valor a combinar), meetups e hangouts para solução de dúvidas"
+    },
+    {
+        "foto":"contato3.jpg",
+        "nome":"Millena",
+        "profissao":"Analista de sistemas sênior no banco Itaú",
+        "cidade":"São Paulo",
+        "estado":"SP",
+        "pais":"Brasil",
+        "skill":"em definição",
+        "nivel":"Iniciado",
+        "descricao":"2/3 da carreira trabalhando com desenvolvimento mainframe (cobol e DB2, batch); 1/3 da carreira trabalhando com especificações para desenvolvimento em hadoop; Iniciada no desenvolvimento web desde agosto/2017",
+        "conhecimento":"Cobol, Lógica de programação, Conceitos de web, Javascript, Hadoop",
+        "disponivel":"Meetups para iniciantes, hangouts e estudos em grupo"
+    }
 ]

@@ -73,13 +73,70 @@ app.get('/', (request, response) => {
 
 app.get('/contatos', (request, response) => {
   // resposta à requisição: reinderizar contatos.handlebars
-  response.render('contatos', {contatos: true, listaContatos: listaContatosJson});
+  response.render('contatos', {listaContatos: listaContatosJson});
   // log do que foi feito na requisição
   var metodo = request.method;
   var rota = "/contatos";
   var status = response.status;
   var acao = "render";
   logControle(metodo, rota, status, acao);
+});
+
+// Rota sobre:
+// Métodos: GET (exibição de dados na tela) e POST (envio dos dados para o arquivo contatosCadastrados.json)
+// Envio de dados: não há (na v2)
+// Leitura de arquivo: quemSomos.json
+app.get('/facaParte', (request, response) => {
+  // log do que foi feito na requisição
+  var metodo = request.method;
+  var rota = "/contatos";
+  var status = response.status;
+  var acao = "render";
+  logControle(metodo, rota, status, acao);
+  response.render('facaParte');
+});
+
+// Rota facaParte:
+// Métodos: GET (exibição de dados na tela) e POST (envio dos dados para o arquivo contatosCadastrados.json)
+// Envio de dados: não há (na v2)
+// Leitura de arquivo: quemSomos.json
+app.get('/facaParte', (request, response) => {
+  // log do que foi feito na requisição
+  var metodo = request.method;
+  var rota = "/contatos";
+  var status = response.status;
+  var acao = "render";
+  logControle(metodo, rota, status, acao);
+  response.render('facaParte');
+});
+
+// Rota facaParte:
+// Métodos: POST (envio dos dados para o arquivo contatosCadastrados.json)
+// Envio de dados: contatosCadastrados.json
+// Leitura de arquivo: contatosCadastrados.json
+app.post('/facaParte', (request, response) => {
+  // log do que foi feito na requisição
+  // leitura antes de gravar:
+  fileSystem.readFile('dados/contatosCadastrados.json', {encoding: 'utf-8', flag: 'r+'}, (error, dados) => {
+    // tratando o conteúdo lido como um array:
+    let contatos = JSON.parse(dados);
+    // inclusao do novo registro no array lido:
+    contatos.push(request.body);
+    contatosTexto = JSON.stringify(contatos);
+
+    fileSystem.writeFile('dados/contatosCadastrados.json', contatosTexto, {encoding: 'utf-8'} , function(erro) {
+      if (erro) {
+        return console.error(erro);
+        response.status(500).send("Erro ao gravar o arquivo");
+      }
+    });
+  });
+  var metodo = request.method;
+  var rota = "/contatos";
+  var status = response.status;
+  var acao = "render";
+  logControle(metodo, rota, status, acao);
+  response.render('cadastroEnviado', request.body);
 });
 
 // Rota sobre:
